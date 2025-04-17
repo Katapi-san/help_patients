@@ -47,7 +47,7 @@ def main():
 
             # 取得データを表示
             st.write("取得データ:")
-            st.dataframe(data)  # Streamlit の json 表示
+            st.table(data)  # Streamlit の json 表示
 
         except requests.exceptions.HTTPError as e:
             st.error(f"HTTP Error: {e}")
